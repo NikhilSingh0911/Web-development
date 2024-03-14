@@ -23,14 +23,23 @@
 .container{
     position: relative;
     height: 2000px ;
-    background-color: aqua;
+    background-color: rgb(139, 248, 250);
 
 }
 .Image4{
     position: fixed;
+     top: 200px;
+     /* fixed in whole window  */
 }
-.image3{
+.Image3{
     position: sticky;
+    top: 100px;
+    /* fixed in the parent container*/
+}
+#box1{
+    background: rgb(220, 244, 159);
+    height: 500px;
+    
 }
 
 </style>
@@ -41,6 +50,8 @@
          <img src="Screenshot 2024-03-14 225946.png"  width='150px' hieght='150px' alt="Image 3" class="Image3">
         <img src="Screenshot 2024-03-14 230008.png"  width='150px' hieght='150px' alt="Image 4" class="Image4">
     </div>
-    
+    <div id="box1">
+
+    </div>
 </body>
 </html>
