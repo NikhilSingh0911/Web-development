@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Learning</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            
+        }
+        .container{
+            width: 100vw;
+            height:100vh;
+            background: aqua;
+            border: 5px solid rgb(228, 255, 90) ;
+             }
+        .box{
+            width: 350px;
+            height: 80px;
+            background: yellow;
+            border-radius: 10px;
+            margin: 10px;
+            border: 2px solid red;
+            position: relative;
+            animation-name: rightmovement;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            /* animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); */
+            animation-direction: alternate;
+
+        }     
+        @keyframes rightmovement{
+            from {
+                top: 0;
+                left: 0;
+
+            }
+            to{
+                top: 0;
+                left: 1000px;
+
+            }
+
+
+        }
+        .box1{
+            width: 350px;
+            height: 80px;
+            background: yellow;
+            border-radius: 10px;
+            margin: 10px;
+            border: 2px solid rgb(70, 84, 209);
+            position: relative;
+            animation-name: leftmovement;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            /* animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); */
+            animation-direction: alternate;
+            
+
+        }
+        @keyframes leftmovement{
+            from {
+                top: 460px;
+                left: 1000px;
+
+            }
+            to{
+                top: 460px;
+                left: 0px;
+
+            }
+        }
+            .circle{
+            width: 50px;
+            height: 50px;
+            top: 200px;
+            left: 670px ;
+            border: 2px solid rgb(202, 51, 104);
+            background: rgb(59, 4, 211);
+            border-radius: 50px;
+            position: relative;
+            animation-name: circlemovenment;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            /* animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86); */
+            animation-direction: alternate;
+
+            }
+            @keyframes circlemovenment{
+                20%{
+                    top: 10%;
+                    left: 10%;
+
+                }
+                45%{
+                    top: 20px;
+                    left: 95%;
+
+
+
+            }
+            75%{
+                top: 60%;
+                left: 10%;
+
+
+            }
+            100%{
+                top: 60%;
+                left: 90%;
+            }
+            }
+
+            
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+        <div class="circle">
+            
+        </div>
+        <div class="box1">
+
+        </div>
+
+
+    </div>
+</body>
+</html>
